@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Velvet Willow Furniture Gallery</h1>
+      <h1>The Velvet Willow - Vision Vault</h1>
       <Images />
       {/* Other components can go here */}
     </div>

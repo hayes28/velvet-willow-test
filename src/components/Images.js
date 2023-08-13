@@ -1,10 +1,8 @@
-
 import 'firebase/storage';
 import { app } from '../config/firebase';
 import React, { useState, useEffect } from 'react';
 import { getStorage, ref, listAll, getDownloadURL } from 'firebase/storage';
-
-
+import ImageCard from '../components/Card'; // Renamed from App for clarity
 
 function Images() {
     const [imageUrls, setImageUrls] = useState([]);
@@ -24,7 +22,7 @@ function Images() {
     return (
         <div>
             {imageUrls.map((url, index) => (
-                <img key={index} src={url} alt="Furniture" />
+                <ImageCard key={index} imageSrc={url} /> // Using ImageCard component here
             ))}
         </div>
     );
